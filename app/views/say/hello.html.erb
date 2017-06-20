@@ -1,3 +1,9 @@
 <h1>Say#hello</h1>
 <p>Find me in app/views/say/hello.html.erb</p>
 <p><%= @time %></p>
+
+<p> Thanks for visiting <%= link_to "GoodBye", say_goodbye_path %></p>
+
+<% @files.each do |file| %>
+	<ul font-color: blue>file name is: <%= file %></ul>
+<%end%>
