@@ -12,6 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20170617214154) do
 
+
   create_table "auctions", force: :cascade do |t|
     t.datetime "start_date"
     t.datetime "end_date"
@@ -20,6 +21,7 @@ ActiveRecord::Schema.define(version: 20170617214154) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
 
   create_table "buyers", force: :cascade do |t|
     t.text "name"
